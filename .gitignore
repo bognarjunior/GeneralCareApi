@@ -1,0 +1,26 @@
+# node modules
+node_modules/
+
+# dist/build outputs
+dist/
+build/
+
+# TS build cache
+*.tsbuildinfo
+
+# environment variables
+.env
+
+# OS
+.DS_Store
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# logs
+*.log
+npm-debug.log*
+
+# misc
+coverage/
