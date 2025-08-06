@@ -1,13 +1,18 @@
 # GeneralCareApi
 
-Back-end do aplicativo General Care — API para gerenciamento de saúde.
+API do GeneralCare — Backend para gerenciamento de saúde.
+
+---
 
 ## 🚀 Tecnologias
 
-- Node.js
-- Fastify
-- TypeScript
-- Supabase (PostgreSQL)
+- **Node.js** + **TypeScript**
+- **Fastify** (servidor web)
+- **Supabase** (PostgreSQL online)
+- **Prisma** (ORM)
+- [ ] Testes automatizados (Jest/Supertest) *(to-do)*
+
+---
 
 ## ⚡️ Como rodar
 
@@ -15,6 +20,45 @@ Back-end do aplicativo General Care — API para gerenciamento de saúde.
 # Instale as dependências
 npm install
 
-# Crie um arquivo .env baseado em .env.example (quando disponível)
-# Rode em modo desenvolvimento
+# Rode em desenvolvimento
 npm run dev
+````
+
+> Configure as variáveis de ambiente no `.env` para conectar ao Supabase.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+src/
+  routes/
+  controllers/
+  services/
+  prisma/
+  index.ts
+.env
+```
+
+---
+
+## 📝 To-do
+
+* [ ] Configurar Prisma e rodar primeiras migrations
+* [ ] Criar endpoints de usuários e saúde
+* [ ] Integração com autenticação
+* [ ] Testes automatizados
+* [ ] Documentação de API (Swagger)
+
+---
+
+## 🤝 Contribuindo
+
+Pull requests são bem-vindos! Para grandes mudanças, por favor abra uma issue antes.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
