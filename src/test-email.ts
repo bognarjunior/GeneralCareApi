@@ -3,13 +3,17 @@ import { sendEmail } from './utils/resend';
 
 (async () => {
   try {
-    await sendEmail({
-      to: 'bognar_junior@yahoo.com.br',
-      subject: 'Testando Resend!',
-      html: '<h1>Funcionou 🎉</h1><p>Seu backend já envia e-mails! 🚀</p>',
+    const data = await sendEmail({
+      to: 'bognar.junior@gmail.com',
+      subject: 'Testando Resend! 🚀',
+      html: '<h1>Funcionou 🎉</h1><p>Seu backend já envia e-mails!</p>',
+      text: 'Funcionou! Seu backend já envia e-mails!',
+      replyTo: 'no-reply@generalcare.app',
     });
-    console.log('E-mail enviado com sucesso!');
+
+    console.log('[Test] OK — retorno do Resend:', data);
+    console.log('E-mail disparado (verifique caixa de entrada/Spam).');
   } catch (err) {
-    console.error('Falha ao enviar e-mail:', err);
+    console.error('[Test] Falha ao enviar e-mail:', err);
   }
 })();
